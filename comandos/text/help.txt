@@ -1,0 +1,21 @@
+                          ___
+              |          /_  \
+     |    _   |          WW\  \
+     |¬  |_\  | |\       MM/  | 
+     | | \__  | |_|      \___/
+                |            \\    
+                |             ||-<"">   
+                         <"">-||  
+                           ___||___
+     line  commands       \        / 
+                          |        |
+   for Audrey Console      \______/    
+                                      
+  
+ mkdir <name>  -creates new directory
+
+ ls   -read current directory
+
+ rmdir <name> -delete the directory
+
+ quit   -kill Audrey   
