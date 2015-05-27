@@ -108,7 +108,7 @@ process.stdin.on('data', function (text) {
   * console introduction
   */ 
 
-   var inputs=text.match(/[a-zñáéíóú\-0-9]+/ig);
+   var inputs=text.match(/[\.a-zñáéíóú\-\/0-9]+/ig);
 
 
    commands(inputs);
@@ -202,6 +202,9 @@ function loadbcommands(){
   var _cd= {command_name:'cd', path:'./comandos/cd.js'};
   var _ls= {command_name:'ls', path:'./comandos/ls.js'};
   var _rm= {command_name:'rm', path:'./comandos/rm.js'};
+  var _cat= {command_name:'cat', path:'./comandos/cat.js'};
+  var _merge= {command_name:'merge', path:'./comandos/merge.js'};
+  var _cp= {command_name:'cp', path:'./comandos/cp.js'};
   
   /**
   * add them to the _arraycommands who is
@@ -214,7 +217,10 @@ function loadbcommands(){
   _arraycommands.push(_pwd);
   _arraycommands.push(_cd);
   _arraycommands.push(_ls);
-  _arraycommands.push(_rm);
+  _arraycommands.push(_rm); 
+  _arraycommands.push(_cp);
+  _arraycommands.push(_merge);
+  _arraycommands.push(_cat);
 
 /**
 *set the default location

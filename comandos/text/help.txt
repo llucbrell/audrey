@@ -23,4 +23,23 @@
 
  pwd                  -show current file location
 
+ cd -r                -change directory to rootdir
+
+ cd ./<path>          -change directory to path
+
+ cd <name dir>        -change to directory name
+
+ cd ..                -down one step into dir tree
+ 
+ cat <filename>       -read file in the console
+
+ cp <origin> <newcopy> 
+                      -copy file in Nname
+
+ merge <dest> <fn1> <fn2> ... <fn>
+
+                      -all files append to flnme1 
+
  quit                 -kill Audrey   
+
+ -------------------------------------------------

@@ -28,9 +28,9 @@ var audrey= require('./audrey.js');
 * Change Directory (cd) command 
 */
 
- var last_rut=[];
+
  var actual_rut;
- var rut_counter=-1;
+ 
 
 /**
 *creates the audrey console 
@@ -39,9 +39,9 @@ var consola= audrey();
 /**
 * add console basic commands
 */
-//consola.setrootdir('./');
+//consola.setrootdir('./');  //more options
 consola.basics();
-consola.setprompt('&');
+//consola.setprompt('&');   //more options
 
 
 /**

@@ -45,8 +45,8 @@ var _list;
 return{
 	nuevo: function(comandos) {nuevico(comandos);}, 
 	erase: function(comandos) {erase(comandos);},
-	 read: function(path) { leedir(path);}
-  
+	 read: function(path) { leedir(path);},
+  testdir: function(path){testea(path);}
   }
 
 /**
@@ -98,6 +98,19 @@ function leedir(path){
         });
        console.log();
        _printprompt.prompt();
+   });
+ }
+
+function testea(path){
+  _filer.readdir(path,  function (err, files){
+      if(err) {
+        console.log("problem reading directory");
+        console.log(err);
+        console.log('may be Audrey eat them..');
+        console.log('feed me..<');
+      }    
+      
+       
    });
  }
 
