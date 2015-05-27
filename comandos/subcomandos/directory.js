@@ -37,7 +37,7 @@ module.exports= function (){
 /**require fs
 */
 var _filer= require('fs');
-var printprompt= require('./prompt.js')
+var _printprompt= require('./prompt.js')
 var _list;
 
 
@@ -58,7 +58,7 @@ return{
 
 function nuevico(comandos){
 
-	_filer.mkdir('./rut/'+comandos[1], function (err){
+	_filer.mkdir(actual_rut + '/'+comandos[1], function (err){
       if(err) {
       	console.log("problem creating project");
       	console.log(err);
@@ -76,7 +76,7 @@ function nuevico(comandos){
 
 function erase(comandos){
 
-	_filer.rmdir('./rut/'+comandos[1], function (err){
+	_filer.rmdir(actual_rut+'/'+comandos[1], function (err){
       if(err) {
       	console.log("problem deleting project");
       	console.log(err);
@@ -97,7 +97,7 @@ function leedir(path){
         process.stdout.write(" "+element);        
         });
        console.log();
-       printprompt.prompt();
+       _printprompt.prompt();
    });
  }
 

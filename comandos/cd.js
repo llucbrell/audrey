@@ -25,7 +25,16 @@
 */
 
 exports.execute= function (inputs){//interface method
-var _path= inputs[1];
+var _initparam= inputs[1];
+
+if (inputs[1]){
+  actual_rut=actual_rut+'/'+inputs[1]+'/';
+}
+
+
+
+}
+/*
 if(inputs[1]==='-b' && rut_counter>-1){
 	actual_rut= last_rut[rut_counter-1];
 }
@@ -65,4 +74,4 @@ else {
  
 }
 
-
+*/

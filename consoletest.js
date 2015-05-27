@@ -39,7 +39,9 @@ var consola= audrey();
 /**
 * add console basic commands
 */
+//consola.setrootdir('./');
 consola.basics();
+consola.setprompt('&');
 
 
 /**
