@@ -20,22 +20,25 @@
           
 /**
 * audrey console requires this modules
-* @bcommands
-* @setcommand
+*
 * @require fs
+* @require promp
 *
 */
 
 module.exports =function(){
   /**require fs*/
   var fs=require('fs');
+  /**require prompt*/
+  var printprompt=require('./comandos/subcomandos/prompt.js')
   /**the start header of the console*/
   var _header;
   /**commands that will be loaded*/
   var _arraycommands=[];
   /**root directory*/
   var _global_rut;
-
+  /**prompt variable*/
+  var _prompt;
   /**
   * audrey methods
   */
@@ -67,7 +70,8 @@ return{
   basics: function(){ loadbcommands();},
   feed: function(name, func){ _arraycommands.push({command_name:name,run:func});},
   sustitute: function(name, func){sustitute(name, func);},
-  setrootdir: function(path){_global_rut= path;}
+  setrootdir: function(path){_global_rut= path;},
+  setprompt: function(newprompt){_prompt= newprompt;}
 }
 
 /**
@@ -78,6 +82,7 @@ return{
 function start(){
   showheader();
   runloop();
+
 }
 
 /**
@@ -96,8 +101,7 @@ process.stdin.setEncoding('utf8');
 /*-------------// console loop //------------------*/
 
 process.stdin.on('data', function (text) {
-      
-     
+   
 
   /**
   * array used to store the data 
@@ -108,10 +112,14 @@ process.stdin.on('data', function (text) {
 
 
    commands(inputs);
-
+   //printprompt.prompt(_prompt);
+   setTimeout(printprompt.prompt(_prompt), 10);   
+     
  });
 
 }
+
+
 
 /**
 * @function showheader()
@@ -129,7 +137,7 @@ _header= (_header||'comandos/text/audrey.txt');
         console.log(err);
         }
       console.log(data);
-    
+      printprompt.prompt(_prompt);
    });
  }
 

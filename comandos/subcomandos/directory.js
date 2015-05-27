@@ -37,7 +37,7 @@ module.exports= function (){
 /**require fs
 */
 var _filer= require('fs');
-
+var printprompt= require('./prompt.js')
 var _list;
 
 
@@ -94,9 +94,10 @@ function leedir(path){
         console.log('feed me..<');
       }    
       files.forEach(function (element){
-        console.log(" "+element);
-      
+        process.stdout.write(" "+element);        
         });
+       console.log();
+       printprompt.prompt();
    });
  }
 

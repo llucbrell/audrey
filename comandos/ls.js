@@ -42,11 +42,11 @@ var list=dir.read(actual_rut);
 * use a time event listener to have time to read the 
 * directory-- will be changed
 */
-setTimeout(wait_for_directory, 1000);
+//setTimeout(wait_for_directory, 1000);
 
 /*show the logs*/
 console.log();  
-console.log('>directory '+ actual_rut);
+console.log('>directory '+ actual_rut + '<');
 console.log();
 
 /**
@@ -55,11 +55,11 @@ console.log();
 * wait one second to give time for reading the
 * directory
 */
-
+/*
 function wait_for_directory(){	
     console.log();  
 	console.log('..ñam..<');
 }
-
+*/
 
 }

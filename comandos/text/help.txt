@@ -12,10 +12,15 @@
    for Audrey Console      \______/    
                                       
   
- mkdir <name>  -creates new directory
 
- ls   -read current directory
+ mkdir <name>         -creates new directory
 
- rmdir <name> -delete the directory
+ ls                   -read current directory
 
- quit   -kill Audrey   
+ rmdir <name>         -delete the directory
+
+ rm <file name>       -delete the file
+
+ pwd                  -show current file location
+
+ quit                 -kill Audrey   
