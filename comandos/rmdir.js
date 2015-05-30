@@ -17,7 +17,7 @@
 * @license MIT -llucbrell 2015-
 */
 
-/**remove a directory project*/
+/**remove a directory*/
 
 
 /*---------------// gloton subcommands (imports) //----------------*/

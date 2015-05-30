@@ -1,18 +1,17 @@
 /******************************************************
-                |     _|__
-            __  |  __  |  __   __
-           /  | | /  \ | /  \ |  \
-           \__| | \__/ | \__/ |  |
-              |  
-            |_|                              
-             
-                   gloton
-          HTML5 writer and CSS integrator 
-                using frameworks     
-
+                                 
+                      |         
+             _        |     _    
+             _| | |  /| |/ |_\ \  / 
+            |_| |_| |_| |  \__  \|
+                   stem console|_|
+                                
+               utf8 configurable
+       console wrapper to work locally
+               with node apps
 ******************************************************/
 /**
-* gloton
+* audrey
 * @file 'checkdelete.js' test the console inputs for new command 
 * @author llucbrell hobbescode@gmail.com
 * @license MIT -llucbrell 2015-

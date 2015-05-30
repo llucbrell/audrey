@@ -18,14 +18,18 @@
 */
 
 
-/**export execute
+/**
+* export execute
 * the same name for all
 * commands function
-*
+* change directory
 */
 
 exports.execute= function (inputs){//interface method
-var filer=require('./subcomandos/directory.js')
+/**
+* @require directory.js
+*/
+var filer=require('./subcomandos/directory.js');
 var dir=filer();
 var _arg= inputs[1];
 var _initarg= _arg[0]+ _arg[1];
@@ -33,7 +37,13 @@ var _directories= actual_rut.match(/[^.\/]+/g);
 //console.log(directories);
 var _temp_rut='.';
 console.log(_directories);
+/**
+* switch case to control the passed parameters to the command
+*/
 switch(_initarg){
+  /** '..'
+  *for down one step into the directory tree
+  */
   case '\.\.':
    _temp_rut='.';
    //console.log(_temp_rut);
@@ -51,6 +61,10 @@ switch(_initarg){
       console.log('directory does not exist');
     }
   break;
+  /**
+  *case './'
+  * for global paths
+  */
   case '\.\/':
   _temp_rut=inputs[1];
   //console.log(_temp_rut);
@@ -66,6 +80,9 @@ switch(_initarg){
     }
 
   break;
+  /** case '-r'
+  *go to the root of the console
+  */
   case '-r':
   actual_rut='./'+_directories[0];
   break;

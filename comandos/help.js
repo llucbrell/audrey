@@ -21,6 +21,7 @@
 /**export execute
 * the same name for all
 * commands function
+* show commands help
 */
 exports.execute= function (inputs){//interface method
 

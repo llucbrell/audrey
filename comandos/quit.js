@@ -20,12 +20,13 @@
 /**export execute
 * the same name for all
 * commands function
+* kill the console, exit the program
 */
 
 exports.execute= function (inputs){//interface method
 
          console.log(">feed me Seymour...");
-         console.log("Im' starving............"); 
+         console.log("Im' starving!!!!!!!!!!!!<"); 
          process.exit();
   
 }

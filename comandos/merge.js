@@ -1,4 +1,25 @@
-/* PROGRAMA DE MERGE DE VARIOS ARCHIVOS */
+/******************************************************
+                                 
+                      |         
+             _        |     _    
+             _| | |  /| |/ |_\ \  / 
+            |_| |_| |_| |  \__  \|
+                   stem console|_| 2
+                                
+               utf8 configurable
+       console wrapper to work locally
+               with node apps
+******************************************************/
+/**
+* audrey
+* @module comandos/merge
+* @file 'ls.js' 
+* @author llucbrell hobbescode@gmail.com
+* @license MIT -llucbrell 2015-
+*/
+
+/*append multiple files into the first one*/
+/* PROGRAMA DE MERGE DE VARIOS ARCHIVOS reuse it from course */
 
 //uso del modulo process de fs y argv
 

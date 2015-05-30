@@ -85,6 +85,13 @@ function erase(comandos){
 	});
  }
 
+/**
+* @function leedir
+* read the directory
+* used readdir to access to the directory
+* @param path from user console input
+*/
+
 function leedir(path){
   _filer.readdir(path,  function (err, files){
       if(err) {
@@ -100,6 +107,14 @@ function leedir(path){
        _printprompt.prompt();
    });
  }
+
+ /**
+* @function testea
+* reads one directory to check if exist
+* uses readdir and error in the callback
+* @param path from user console input
+*/
+
 
 function testea(path){
   _filer.readdir(path,  function (err, files){

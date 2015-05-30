@@ -20,7 +20,7 @@
 /**export execute
 * the same name for all
 * commands function
-*
+* copy one file
 */
 
 exports.execute= function (inputs){//interface method
@@ -28,6 +28,9 @@ if(inputs.length!=3){
 	console.log("syntax error..")
 }
 else{
+  /**
+  *require fs
+  */
 var fs= require('fs');
 
 fs.readFile(actual_rut+'/'+inputs[1], function (err, data){

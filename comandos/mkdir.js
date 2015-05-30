@@ -21,7 +21,9 @@
           
 exports.execute= function(inputs){
 /**directory import subcomand or action*/
-
+/**@require directory.js 
+* require checknew.js
+*/
 var directory =require('./subcomandos/directory.js');
 var check =require('./consolechecks/checknew.js');
 

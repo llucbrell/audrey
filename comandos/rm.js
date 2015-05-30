@@ -12,7 +12,7 @@
 ******************************************************/
 /**
 * audrey
-* @file 'cd.js' change directory interface 
+* @file 'rm.js' change directory interface 
 * @author llucbrell hobbescode@gmail.com
 * @license MIT -llucbrell 2015-
 */
@@ -21,7 +21,7 @@
 /**export execute
 * the same name for all
 * commands function
-*
+* remove file
 */
 
 exports.execute= function (inputs){//interface method

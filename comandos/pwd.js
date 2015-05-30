@@ -21,6 +21,8 @@
 /**export execute
 * the same name for all
 * commands function
+* print working directory path
+* works with global variable actual_rut
 */
 
 exports.execute= function (inputs){//interface method
