@@ -34,9 +34,8 @@ var dir=filer();
 var _arg= inputs[1];
 var _initarg= _arg[0]+ _arg[1];
 var _directories= actual_rut.match(/[^.\/]+/g);
-//console.log(directories);
 var _temp_rut='.';
-console.log(_directories);
+//console.log(_directories);
 /**
 * switch case to control the passed parameters to the command
 */

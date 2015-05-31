@@ -44,10 +44,6 @@ var list=dir.read(actual_rut);
 */
 //setTimeout(wait_for_directory, 1000);
 
-/*show the logs*/
-console.log();  
-console.log('>directory '+ actual_rut + '<');
-console.log();
 
 /**
 * @function
