@@ -37,7 +37,7 @@
      |     |     MIT- llucbrell- 2015     |        |           |
      |     |                              |        |      /// / 
      |     |                              |        |     /// /   
-__ __|      \_____________________________|        |    /// / __ __ __  
+     |      \_____________________________|        |    /// / __ __ __  
      |                                             |     __/ 
      |                                       _     |    /  
      |  o                                   /o\    |   |  
@@ -45,8 +45,8 @@ __ __|      \_____________________________|        |    /// / __ __ __
                                               \_    
                 ______                          \__
         _____¬¬¬      \                            \
-   __¬¬¬          \_   \_                        __/
-   \      \_  \_         \                     _/
+     ¬¬¬          \_   \_                        __/
+    \      \_  \_         \                     _/
     \             \_      \_                  /
      \     \_         \_    \                /
       \                      \              | 
@@ -63,114 +63,106 @@ __ __|      \_____________________________|        |    /// / __ __ __
                  \                \_
                       
 
-  Audrey2 Console Wrapper is a command line console
-  I've writed it meanwhile I was playing with node 
-  'fs' module and to have a bash independent and 
-  quickly confugurable input-output system for nodeapps
-  You can presonalize, extend it or use as an input
-  output system for your node apps. It has a basic
-  command kit I'm extending. You can also contribute
-  with your personal commands and help me to feed 
-  Audrey. 
+     Audrey2 Console Wrapper is a command line console
+     I've writed it meanwhile I was playing with node 
+     'fs' module and to have a bash independent and 
+     quickly confugurable input-output system for nodeapps
+     You can presonalize, extend it or use as an input
+     output system for your node apps. It has a basic
+     command kit I'm extending. You can also contribute
+     with your personal commands and help me to feed 
+     Audrey. 
 
-  >If you feed me Seymour.. I can grow, big and strong!
+     >If you feed me Seymour.. I can grow, big and strong!
 
 
 
 <h2> BASIC CONSOLE COMMANDS</h2>
 
 
- mkdir <name>         -creates new directory
+    mkdir <name>         -creates new directory
 
- ls                   -read current directory
+    ls                   -read current directory
 
- rmdir <name>         -delete the directory
+    rmdir <name>         -delete the directory
 
- rm <file name>       -delete the file
+    rm <file name>       -delete the file
 
- pwd                  -show current file location
+    pwd                  -show current file location
 
- cd -r                -change directory to rootdir
+    cd -r                -change directory to rootdir
 
- cd ./<path>          -change directory to path
+    cd ./<path>          -change directory to path
 
- cd <name dir>        -change to directory name
+    cd <name dir>        -change to directory name
 
- cd ..                -down one step into dir tree
+    cd ..                -down one step into dir tree
  
- cat <filename>       -read file in the console
+    cat <filename>       -read file in the console
 
- cp <origin> <newcopy> 
+    cp <origin> <newcopy> 
                       -copy file in Nname
 
- merge <dest> <fn1> <fn2> ... <fn>
+    merge <dest> <fn1> <fn2> ... <fn>
 
                       -all files append to flnme1 
 
- quit                 -kill Audrey   
+    quit                 -kill Audrey   
 
 
- -------------------------------------------------  
+ 
 
 
 
 <h2>How it works</h2>
 
- var audrey= require('./audrey2');
+Require audrey path
 
-/**
-* global variables for 
-* Change Directory (cd) command 
-*/
+    var audrey= require('./audrey2');
 
 
- var actual_rut;
+ global for Change Directory (cd) command 
+
+    var actual_rut;
  
 
-/**
-*creates the audrey console 
-*/
+
+creates the audrey console 
+
+      var consola= audrey();
 
 
-var consola= audrey();
+add console basic commands
+
+      //consola.setrootdir('./');  //more options
+      consola.basics();
+      //consola.setprompt('&');   //more options
 
 
-/**
-* add console basic commands
-*/
-//consola.setrootdir('./');  //more options
-consola.basics();
-//consola.setprompt('&');   //more options
+how to attach personal commands
+attach a command from this file
 
 
-/**
-* how to attach personal commands
-* attach a command from this file
-*/
+       consola.feed('mamasaid', function (){console.log("You'll be a deeeentist!");});
 
-consola.feed('mamasaid', function (){console.log("You'll be a deeeentist!");});
 
-/**
-* attach a command using parameters
-* inputs [array of user inputs]
-* each input[] is a word matched by audrey
-*/
+attach a command using parameters
+inputs [array of user inputs]
+each input[] is a word matched by audrey
 
-/**
-* works usin feed <name>
-*/
-consola.feed('feed', function (inputs){
-    if(inputs[1]){
-  console.log('feeeeed meeee.... '+inputs[1]); 
-     }
-     else{
-    console.log('feeeeed meeee.... Seymour'); 
-     }
-});
 
-/**
-*start the console
-*/
-consola.start();
+      consola.feed('feed', function (inputs){
+       if(inputs[1]){
+        console.log('feeeeed meeee.... '+inputs[1]); 
+        }
+        else{
+       console.log('feeeeed meeee.... Seymour'); 
+        }
+      });
+
+
+start the console
+
+      consola.start();
 
 
