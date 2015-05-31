@@ -4,7 +4,7 @@
              _        |     _    
              _| | |  /| |/ |_\ \  / 
             |_| |_| |_| |  \__  \|
-                   stem console|_|
+                   stem console|_|2
                                 
                utf8 configurable
        console wrapper to work locally

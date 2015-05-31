@@ -77,7 +77,7 @@ __ __|      \_____________________________|        |    /// / __ __ __
 
 
 
-           BASIC CONSOLE COMMANDS
+<h2> BASIC CONSOLE COMMANDS</h2>
 
 
  mkdir <name>         -creates new directory
@@ -110,4 +110,67 @@ __ __|      \_____________________________|        |    /// / __ __ __
  quit                 -kill Audrey   
 
 
- -------------------------------------------------          
+ -------------------------------------------------  
+
+
+
+<h2>How it works</h2>
+
+ var audrey= require('./audrey2');
+
+/**
+* global variables for 
+* Change Directory (cd) command 
+*/
+
+
+ var actual_rut;
+ 
+
+/**
+*creates the audrey console 
+*/
+
+
+var consola= audrey();
+
+
+/**
+* add console basic commands
+*/
+//consola.setrootdir('./');  //more options
+consola.basics();
+//consola.setprompt('&');   //more options
+
+
+/**
+* how to attach personal commands
+* attach a command from this file
+*/
+
+consola.feed('mamasaid', function (){console.log("You'll be a deeeentist!");});
+
+/**
+* attach a command using parameters
+* inputs [array of user inputs]
+* each input[] is a word matched by audrey
+*/
+
+/**
+* works usin feed <name>
+*/
+consola.feed('feed', function (inputs){
+    if(inputs[1]){
+  console.log('feeeeed meeee.... '+inputs[1]); 
+     }
+     else{
+    console.log('feeeeed meeee.... Seymour'); 
+     }
+});
+
+/**
+*start the console
+*/
+consola.start();
+
+

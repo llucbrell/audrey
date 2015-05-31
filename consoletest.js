@@ -17,7 +17,7 @@
 * @license MIT -llucbrell 2015-
 */
 
-var audrey= require('./audrey.js');
+var audrey= require('./audrey2');
 /**
 * easy 
 * @require audrey.js
