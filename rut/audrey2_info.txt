@@ -1,0 +1,77 @@
+                               ____   
+                            ¬¬      ¬ ¬¬
+                          /              \       
+                        /________         \
+                         VVVVVVVV\        |
+                                 /        /
+                          MMMMMM/         |
+                          \              / 
+                            ¬¬ __    _¬¬ 
+                                /  / 
+                               /  /    
+                              |  |__    __/
+                              \  \  \__/  \__
+                       __/   __\  \         
+                         \__/   \  \
+                                |  | 
+                        ________/ _/______
+                      | _ _  _  _   _   _  _|
+                       \                   /
+                        \                 /
+                         \               /
+                          \             /
+                           \ _ _ _ _ _ /
+       ___________________________________________ _
+      /                                           \ \__ 
+     |                                             |   \_ _ 
+     |                                             |        \__
+     |        ____________________________         |    |||    |
+     |      /             |               |        |    |||    |
+     |     |     _        |     _         |        |    |||    |
+     |     |     _| | |  /| |/ /_\ \ /    |        |           |
+     |     |    |_| |_| |_| |  \__  V     |        |           |
+     |     |                        |2    |        |    |||    |
+     |     |                              |        |    |||    |
+     |     |   utf8 stem console wrapper  |        |    |||    |
+     |     |       for node apps          |        |    |||    |
+     |     |     MIT- llucbrell 2015      |        |           |
+     |     |                              |        |      /// / 
+     |     |                              |        |     /// /   
+__ __|      \_____________________________|        |    /// / __ __ __  
+     |                                             |     __/ 
+     |                                       _     |    /  
+     |  o                                   /o\    |   |  
+      \_____________________________________\\/__ /  __/ 
+                                              \_    
+                ______                          \__
+        _____¬¬¬      \                            \
+   __¬¬¬          \_   \_                        __/
+   \      \_  \_         \                     _/
+    \             \_      \_                  /
+     \     \_         \_    \                /
+      \                      \              | 
+        \       \_    \_       \_           /
+        \                       \         /
+          \    \_    \_     \_    \_    __/
+          \                        \__/
+            \    \_       \_         \_
+            \        \_         \_    \
+              \                         \
+              \    \_                   \
+               \             \_    \_    \_
+                \       \_                 \
+                 \                \_
+                      
+
+  Audrey2 Console Wrapper is a command line console
+  I've writed it meanwhile I was playing with node 
+  'fs' module and to have a bash independent and 
+  quickly confugurable input-output system for nodeapps
+  You can presonalize, extend it or use as an input
+  output system for your node apps. It has a basic
+  command kit I'm extending. You can also contribute
+  with your personal commands and help me to feed 
+  Audrey. 
+
+  >If you feed me Seymour.. I can grow, big and strong!
+
